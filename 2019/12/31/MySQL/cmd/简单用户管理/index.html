@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>MySQL/cmd/简单用户管理 | jumpywin_blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="用户管理创建用户12345678create user if not exists &#39;user_nmae&#39;@&#39;localhost&#39;#(限制的主机地址)identified with mysql_native_password # 身份验证的方式by&#39;user_password&#39; #用户密码withmax_queries_per_hourmax_updates_per_hourmax_connect">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL&#x2F;cmd&#x2F;简单用户管理">
+<meta property="og:url" content="http://jumpywin.github.io/2019/12/31/MySQL/cmd/%E7%AE%80%E5%8D%95%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/index.html">
+<meta property="og:site_name" content="jumpywin_blog">
+<meta property="og:description" content="用户管理创建用户12345678create user if not exists &#39;user_nmae&#39;@&#39;localhost&#39;#(限制的主机地址)identified with mysql_native_password # 身份验证的方式by&#39;user_password&#39; #用户密码withmax_queries_per_hourmax_updates_per_hourmax_connect">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-31T15:43:47.401Z">
+<meta property="article:modified_time" content="2019-11-12T12:09:47.000Z">
+<meta property="article:author" content="jumpywin">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="jumpywin_blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">jumpywin_blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://jumpywin.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-MySQL/cmd/简单用户管理" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/cmd/%E7%AE%80%E5%8D%95%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.401Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MySQL/cmd/简单用户管理
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h1><h2 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> <span class="string">'user_nmae'</span>@<span class="string">'localhost'</span><span class="comment">#(限制的主机地址)</span></span><br><span class="line"><span class="keyword">identified</span> <span class="keyword">with</span> mysql_native_password <span class="comment"># 身份验证的方式</span></span><br><span class="line"><span class="keyword">by</span><span class="string">'user_password'</span> <span class="comment">#用户密码</span></span><br><span class="line"><span class="keyword">with</span></span><br><span class="line">max_queries_per_hour</span><br><span class="line">max_updates_per_hour</span><br><span class="line">max_connections_per_hour</span><br><span class="line">max_user_connections</span><br></pre></td></tr></table></figure>
+
+<p><code>max_queries_per_hour</code><br>该参数设置一个用户在一小时内可以执行查询的次数（基本包含所有语句）</p>
+<p><code>max_updates_per_hour</code><br>该参数设置一个用户在一小时内可以执行修改的次数（仅包含修改数据库或表的语句）。</p>
+<p><code>max_connections_per_hour</code><br>该参数设置一个用户在一小时内可以连接MySQL的时间。</p>
+<p><code>max_user_connections</code><br>该参数作用是设置所有用户在同一时间连接MySQL实例的最大连接数限制。但这个参数无法对每个用户区别对待。</p>
+<h2 id="用户的权限授予与撤销"><a href="#用户的权限授予与撤销" class="headerlink" title="用户的权限授予与撤销"></a>用户的权限授予与撤销</h2><h3 id="权限的授予"><a href="#权限的授予" class="headerlink" title="权限的授予"></a>权限的授予</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grant privilege_name on database_name.Table_name </span><br><span class="line">to &#39;user_name&#39;@&#39;主机地址&#39;</span><br></pre></td></tr></table></figure>
+<p>将 table的privilege赋给user<br>如果需要添加授权，则再次运行这条语句即为添加而不是覆盖。</p>
+<ul>
+<li>可以通过授予权限的方式来创建用户<br>但是mySQL将在mySQL9时删除该功能（意思就是说不要用，要没了，可能有什么不太妙的地方）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grant privilege_name on database_name.Table_name </span><br><span class="line">to &#39;user_name&#39;@&#39;主机地址&#39;</span><br><span class="line">identified by &#39;password&#39;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="一个典型的创建用户与授权的例子"><a href="#一个典型的创建用户与授权的例子" class="headerlink" title="一个典型的创建用户与授权的例子"></a>一个典型的创建用户与授权的例子</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grant insert,select,update,delete on ownSQL.*</span><br><span class="line">to &#39;user1&#39;@&#39;localhost&#39; identified &#39;123456&#39;</span><br></pre></td></tr></table></figure>
+<p>或许这一种创建用户的方式用的比较多，因为把创建用户和权限授予写在了一起，清晰也很简洁。</p>
+<p>检查用户的权限<br><code>show grants &#39;user_name&#39;@&#39;主机限制&#39;</code><br>打印出该用户所拥有的各项权限。</p>
+<h3 id="权限的撤销"><a href="#权限的撤销" class="headerlink" title="权限的撤销"></a>权限的撤销</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">revoke</span> privilege_name <span class="keyword">on</span> database_name.table.name <span class="keyword">from</span></span><br><span class="line">user_name @ <span class="string">'主机地址'</span></span><br></pre></td></tr></table></figure>
+<p>撤销权限与创建权限的语法相同。向用户授予权限用<code>to</code>，从用户撤销权限用<code>from</code>。</p>
+<h3 id="直接修改mysql-user表"><a href="#直接修改mysql-user表" class="headerlink" title="直接修改mysql.user表"></a>直接修改mysql.user表</h3><p>这也是一种更改用户权限的一种方式，但是不会立即生效，需要手动重新载入改表才能生效。</p>
+<h3 id="设置用户密码有效期"><a href="#设置用户密码有效期" class="headerlink" title="设置用户密码有效期"></a>设置用户密码有效期</h3><p><code>password expire</code></p>
+<ul>
+<li>手动设置用户密码为过期状态<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &#39;user_name&#39;@&#39;主机地址&#39; password expire</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>-手动设置用户密码过期时间<br>要求用户90天更换一次密码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &#39;user_name&#39;@&#39;主机地址&#39; password expire interval 90 day</span><br></pre></td></tr></table></figure>
+
+<h3 id="锁定账户"><a href="#锁定账户" class="headerlink" title="锁定账户"></a>锁定账户</h3><p><code>create user</code>或者<code>alt user</code>都可以使用<code>account lock</code>来锁定账户，用<br><code>account unlock</code>来解锁账户</p>
+<h3 id="为用户创建角色"><a href="#为用户创建角色" class="headerlink" title="为用户创建角色"></a>为用户创建角色</h3><p>角色就是一系列权限的集合（<code>read_only</code>,<code>admin</code>…），可以为用户同时分配几个角色（即让一个用户同时担任多个角色）</p>
+<ul>
+<li><p>创建两个角色 <code>read_only</code>,<code>root</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create role &#39;read_only&#39;,&#39;root&#39;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>为这两个角色分配权限<br>给角色分配权和给用户直接分配权限是一样的 使用<code>grant</code>命令。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant select on &#96;database_name&#96;.&#96;table_name&#96; to read_only;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询用户所拥有的角色？<br>没发现这样的命令，都是直接对user表进行的查询。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/cmd/%E7%AE%80%E5%8D%95%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" data-id="ck4u1kn3800075cmqdz8udmzp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/12/31/MySQL/cmd/%E7%BD%97%E5%B0%8F%E9%BB%91%E5%BA%93%E6%BA%90%E7%A0%81/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          MySQL/cmd/罗小黑库源码
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/31/MySQL/cmd/MySQL%E5%85%B3%E9%94%AE%E5%AD%97/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">MySQL/cmd/MySQL关键字</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E8%A1%A8%E5%85%B3%E8%81%94/">MySQL/增删改查/表关联</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E5%88%9B%E5%BB%BA%E8%A1%A8%E4%B8%8E%E8%A1%A8%E5%86%85%E5%A2%9E%E5%88%A0%E6%94%B9/">MySQL/增删改查/创建表与表内增删改</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/">MySQL/增删改查/SQL查询语句</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySQL%E5%B0%86%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5%E8%BF%9B%E8%A1%8C%E5%90%88%E5%B9%B6/">MySQL/增删改查/MySQL将记录中的某个字段进行合并</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySql%E4%B8%AD%E9%87%8D%E6%96%B0%E8%AE%BE%E7%BD%AEAUTO_INCREMENT%E8%87%AA%E5%A2%9E%E5%80%BC%E6%96%B9%E6%B3%95/">MySQL/增删改查/MySql中重新设置AUTO_INCREMENT自增值方法</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 jumpywin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

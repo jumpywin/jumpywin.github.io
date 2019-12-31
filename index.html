@@ -1,548 +1,1207 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+  <meta charset="utf-8">
+  
 
-    
-
-    
-
-
-
-    <meta charset="utf-8">
-    
-    
-    
-    
-    <title>jumpywin_blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    
-    <meta name="keywords" content="">
-    <meta property="og:type" content="website">
+  
+  <title>jumpywin_blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="jumpywin_blog">
 <meta property="og:url" content="http://jumpywin.github.io/index.html">
 <meta property="og:site_name" content="jumpywin_blog">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="jumpywin">
 <meta name="twitter:card" content="summary">
-    
-    <link rel="shortcut icon" href="/">
-    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
-    <script>window.lazyScripts=[]</script>
-
-    <!-- custom head -->
-    
+  
+    <link rel="alternate" href="/atom.xml" title="jumpywin_blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body>
-    <div id="loading" class="active"></div>
-
-    <aside id="menu"  >
-  <div class="inner flex-row-vertical">
-    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
-        <i class="icon icon-lg icon-close"></i>
-    </a>
-    <div class="brand-wrap" style="background-image:url(/)">
-      <div class="brand">
-        <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/">
-        </a>
-        <hgroup class="introduce">
-          <h5 class="nickname">jumpywin</h5>
-          <a href="mailto:undefined" class="mail">
-        </hgroup>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">jumpywin_blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://jumpywin.github.io"></form>
       </div>
     </div>
-    <div class="scroll-wrap flex-col">
-      <ul class="nav">
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-MySQL/增删改查/表关联" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E8%A1%A8%E5%85%B3%E8%81%94/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.410Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E8%A1%A8%E5%85%B3%E8%81%94/">MySQL/增删改查/表关联</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="这是一个空的MarkDown"><a href="#这是一个空的MarkDown" class="headerlink" title="这是一个空的MarkDown"></a>这是一个空的MarkDown</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select c2.name,c2.note</span><br><span class="line">from &#96;character&#96;  c1 join &#96;character&#96; c2 on c1.name &#x3D; c2.name</span><br><span class="line">where c1.id !&#x3D; c2.id</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>以上代码可以找出一张表中部分列相同的行，可以用于数据去重。#完美</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E8%A1%A8%E5%85%B3%E8%81%94/" data-id="ck4u1kn3e000d5cmq2dtmglpw" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/增删改查/创建表与表内增删改" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E5%88%9B%E5%BB%BA%E8%A1%A8%E4%B8%8E%E8%A1%A8%E5%86%85%E5%A2%9E%E5%88%A0%E6%94%B9/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.409Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E5%88%9B%E5%BB%BA%E8%A1%A8%E4%B8%8E%E8%A1%A8%E5%86%85%E5%A2%9E%E5%88%A0%E6%94%B9/">MySQL/增删改查/创建表与表内增删改</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table if not exists &#96;database_name&#96;.&#96;table_name&#96;(</span><br><span class="line">    uid int auto_increment primary key,</span><br><span class="line">    name varchar(10) default &#39;nothing&#39;,</span><br><span class="line">    age int(5)</span><br><span class="line">) engine&#x3D;innodb</span><br></pre></td></tr></table></figure>
+<p>将 数据库名 表名 列名 括起来用的反引号，字符串用的是单引号。如无命名争议也可不用</p>
+<ul>
+<li><code>use database_name</code> 指定数据库后，可不用数据库名.表名来调用表</li>
+<li><code>auto_increment</code> 自动生成线性递增序列，不必手动赋值,但是不建议随意使用，在需要删除其中某一条数据的时候，保持其正确的连贯增长十分麻烦</li>
+</ul>
+<p><a href="MySql中重新设置AUTO_INCREMENT自增值方法.md">MySql中重新设置AUTO_INCREMENT自增值方法</a>   </p>
+<ul>
+<li><code>default</code>为字段设置默认初始值</li>
+<li><code>primary key</code> 主键</li>
+<li><code>if not exists</code> 当表不存在时，立刻创建，若存在，则返回一个警告，如没有这个关键词 则报错。</li>
+<li><code>desc table_name</code> 显示表结构，字段类型，主键，是否为空等属性，但不显示外键。   </li>
+<li><code>create table new table_name like table_name</code><br>克隆表结构  </li>
+<li><code>drop table_name</code> 删除整个表结构</li>
+<li><code>delete table_name</code> 删除表中所有数据，但保留表结构，返回所删除的行数 int类型</li>
+</ul>
+<h2 id="插入，更新，删除行"><a href="#插入，更新，删除行" class="headerlink" title="插入，更新，删除行"></a>插入，更新，删除行</h2><h3 id="插入多行数据"><a href="#插入多行数据" class="headerlink" title="插入多行数据"></a>插入多行数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">insert ignore into &#96;database_name&#96;.&#96;table_name&#96;（Column_name1,Column_name2）</span><br><span class="line">values</span><br><span class="line">(value1,value2),</span><br><span class="line">(value3,value4),</span><br><span class="line">(value5,value6),</span><br></pre></td></tr></table></figure>
+<p>所有列的数据必须显式给出</p>
+<h3 id="更新行数据"><a href="#更新行数据" class="headerlink" title="更新行数据"></a>更新行数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">update table_name set value1 &#x3D; &#39;value1&#39;,value2 &#x3D; &#39;value2&#39;</span><br><span class="line">where id &#x3D; 2;</span><br></pre></td></tr></table></figure>
+<p>更新id=2 的行的数据  </p>
+<h3 id="删除行数据"><a href="#删除行数据" class="headerlink" title="删除行数据"></a>删除行数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">delete from table_name </span><br><span class="line">where id &#x3D; 2</span><br></pre></td></tr></table></figure>
+<ul>
+<li>where语句是强制的，如果没有，表中所有行将被更新或删除</li>
+<li>对于自增的字段，在用delete删除后，再插入值，该字段仍按照删除前的位置继续增长(或许因为可回滚)，<code>truncate</code></li>
+</ul>
+<h3 id="replace-替换行"><a href="#replace-替换行" class="headerlink" title="replace 替换行"></a>replace 替换行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">replace into table_name valus (value1,value2);</span><br></pre></td></tr></table></figure>
+
+<h3 id="多行累加更新-MySQL特有语法"><a href="#多行累加更新-MySQL特有语法" class="headerlink" title="多行累加更新 MySQL特有语法"></a>多行累加更新 MySQL特有语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">insert into table_name values(value1,value2)</span><br><span class="line">on duplicate key update</span><br><span class="line">value1 &#x3D; values(value1)</span><br><span class="line">value2 &#x3D; values(value2)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果没有这一行（主键是否冲突为依据）普通添加<br>如果存在，则按照给出的值进行更新</li>
+</ul>
+<h4 id="可累加"><a href="#可累加" class="headerlink" title="可累加"></a>可累加</h4><ul>
+<li>可以用这个操作做累加运算</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">insert into table_name values(value1,value2)</span><br><span class="line">on duplicate key update</span><br><span class="line">value1 &#x3D; value1 + values(value1)</span><br><span class="line">value2 &#x3D; value2 + values(value2)</span><br></pre></td></tr></table></figure>
+<p>将新的value值累加到原先的值上，如果不存在则等同于insert插入操作</p>
+<h3 id="清空整个表的数据，但保留表结构"><a href="#清空整个表的数据，但保留表结构" class="headerlink" title="清空整个表的数据，但保留表结构"></a>清空整个表的数据，但保留表结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">truncate table table_name</span><br></pre></td></tr></table></figure>
+<ul>
+<li>清空操作不可回滚 ddl操作，</li>
+</ul>
+<h2 id="更改表数据"><a href="#更改表数据" class="headerlink" title="更改表数据"></a>更改表数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alter table  &#96;tanble_name&#96; add  &#96;list_name&#96; type fist;#向&#96;table&#96;表添加一列&#96;list_name&#96;,并放在第一列</span><br><span class="line"></span><br><span class="line">alter table  &#96;tanble_name&#96; add  &#96;list_name&#96; type after &#96;list_name_01&#96;;#向&#96;table&#96;表添加一列&#96;list_name&#96;,并放在&#96;list_name_01&#96;后面</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE tanble_name drop id_03; #删除字段 id_03</span><br><span class="line"></span><br><span class="line">ALTER TABLE tanble_name drop PRIMARY KEY; #删除主键,</span><br></pre></td></tr></table></figure>
+
+<h4 id="关键字-modify-change-rename-alter-field-set-default-num"><a href="#关键字-modify-change-rename-alter-field-set-default-num" class="headerlink" title="关键字:modify, change, rename, alter [field] set default [num]"></a>关键字:modify, change, rename, alter [field] set default [num]</h4><ul>
+<li><p><code>modify</code>: 修改字段类型设置,不可以更改字段名</p>
+</li>
+<li><p><code>change</code>: 修改字段类型设置 可以更改字段名</p>
+</li>
+<li><p><code>ALTER TABLE tb_test modify id_01 int(5) not null;</code> 把 id_01 字段类型修改 int(5),和非空</p>
+</li>
+<li><p><code>ALTER TBALE tb_test change id_01 id_test int(10);</code> 把 id_01 更名 id_test 并且字段类型设置为 INT(10)</p>
+</li>
+<li><p><code>ALTER TABLE tb_test RENAME tb_test02;</code>把表 tb_test 更名为 tb_test02;</p>
+</li>
+<li><p><code>ALTER TABLE tb_test ALTER id_01 set default 1000;</code>把表tb_test 的字段 id_01 设置默认值为1000,其他的约束不变</p>
+</li>
+<li><p><code>ALTER TABLE tb_test ALTER id_01 DROP DEFAULT;</code> 删除 字段 id_01 的默认设置值</p>
+</li>
+<li><p><code>ALTER TABLE tb_test ENGINE = MYISAM;</code> 把 表tb_test 类型设置为 MYISAM; myqsl默认 INNODB</p>
+</li>
+</ul>
+<h3 id="删除整张表"><a href="#删除整张表" class="headerlink" title="删除整张表"></a>删除整张表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop table table_name</span><br></pre></td></tr></table></figure>
+<ul>
+<li>不保留数据</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete table table_name</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>语义与上相同，但是MySQL不支持</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E5%88%9B%E5%BB%BA%E8%A1%A8%E4%B8%8E%E8%A1%A8%E5%86%85%E5%A2%9E%E5%88%A0%E6%94%B9/" data-id="ck4u1kn3b000b5cmqa07123ca" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/增删改查/SQL查询语句" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.408Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/">MySQL/增删改查/SQL查询语句</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="SQL-查询相关"><a href="#SQL-查询相关" class="headerlink" title="SQL 查询相关"></a>SQL 查询相关</h1><h2 id="基本语句"><a href="#基本语句" class="headerlink" title="基本语句"></a>基本语句</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="comment">#需要打印的列名</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> <span class="comment">#从哪张表里面打印  </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">where</span> <span class="comment">#条件关系式 筛选打印条件 </span></span><br><span class="line">        <span class="comment">#where 语句可以使用逻辑连词 and or not</span></span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> <span class="comment">#列名 按照哪个列为标准分组  </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">having</span> <span class="comment">#分组语句的谓语，对分组后结果进行筛选</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">distinct</span> <span class="comment">#</span></span><br></pre></td></tr></table></figure>
+<h2 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h2><ul>
+<li>avg()平均  </li>
+<li>min()最小  </li>
+<li>max()取最大  </li>
+<li>sum()加起来  </li>
+<li>count()计个数  </li>
+</ul>
+<p>sum和avg的输入必须是数字集，其他的聚合函数的输入可以是别的，比如字符串</p>
+<h4 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select core,count(*) as count</span><br><span class="line">from AMD_YES</span><br><span class="line">#where tdp &gt;65</span><br><span class="line">group by core having core &lt;16</span><br></pre></td></tr></table></figure>
+<p>输出结果为：<br>core | count<br>:-:|:-:<br>12 | 1<br>8 | 3<br>6 | 2<br>4 | 2  </p>
+<h3 id="对结果排序"><a href="#对结果排序" class="headerlink" title="对结果排序"></a>对结果排序</h3><ul>
+<li><p>基本语句<br>  <code>order by column_name limit number</code><br>  <code>column_name</code> #以此列为基准排序<br>  <code>number</code> #打印出前number个数据<br>  <code>desc</code> #置顶升序排序<br>  <code>asc</code> #指定升序排序  </p>
+<p>  你可以在select语句的<code>order by</code>语句 里面使用列的位置来指定列，而不是列的名称。（但是，一听就知道不是推荐做法）例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select core, name  </span><br><span class="line">from AMD_YES  </span><br><span class="line">#where tdp &gt;65</span><br><span class="line">order by 2 asc</span><br><span class="line">limit 8</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/" data-id="ck4u1kn3c000c5cmq6jvqg47z" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/增删改查/MySQL将记录中的某个字段进行合并" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySQL%E5%B0%86%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5%E8%BF%9B%E8%A1%8C%E5%90%88%E5%B9%B6/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.406Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySQL%E5%B0%86%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5%E8%BF%9B%E8%A1%8C%E5%90%88%E5%B9%B6/">MySQL/增删改查/MySQL将记录中的某个字段进行合并</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="将元组中的某两个元素进行合并：-concat"><a href="#将元组中的某两个元素进行合并：-concat" class="headerlink" title="将元组中的某两个元素进行合并： concat()"></a>将元组中的某两个元素进行合并： concat()</h1><p>假如对于user表，如下：  </p>
+<table>
+<thead>
+<tr>
+<th align="center">id</th>
+<th align="center">class</th>
+<th align="center">name</th>
+<th align="center">age</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">1001</td>
+<td align="center">zh</td>
+<td align="center">18</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">1001</td>
+<td align="center">en</td>
+<td align="center">19</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">1002</td>
+<td align="center">cs</td>
+<td align="center">18</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">1002</td>
+<td align="center">jp</td>
+<td align="center">19</td>
+</tr>
+</tbody></table>
+<p>如果想将name 和age 作为一个字段显示， 有：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">id</span>, <span class="keyword">class</span>, <span class="keyword">concat</span>(<span class="keyword">name</span>, <span class="string">": "</span>, age) <span class="keyword">as</span> name_age <span class="keyword">from</span> <span class="keyword">user</span>;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br>i|class|name_age<br>:-:|:-:|:-:<br>1 | 1001 | zh:18<br>2 | 1001 | en:19<br>3 | 1002 | cs: 18<br>4 | 1002 | jp: 19</p>
+<h1 id="将多个元组中的某些某些元素合并：group-coacat"><a href="#将多个元组中的某些某些元素合并：group-coacat" class="headerlink" title="将多个元组中的某些某些元素合并：group_coacat()"></a>将多个元组中的某些某些元素合并：group_coacat()</h1><p>依然对上面user表， 若根据年级分组， 并将name和age全部合并在一列中显示， 有：<br>class | name_age<br>:-|:-<br>1001 | zh:18,en:19<br>1002 | cs:18,jp:19</p>
+<p>使用group_coacat() 方法默认是以“,”进行分割， 如果希望以其他字符进行分割可使用“separator”， 如：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">class</span>, <span class="keyword">group_concat</span>(<span class="keyword">name</span>, <span class="string">":"</span>, age separator <span class="string">";"</span>) <span class="keyword">as</span> name_age </span><br><span class="line"><span class="keyword">from</span> <span class="keyword">user</span> </span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> <span class="keyword">class</span>;</span><br></pre></td></tr></table></figure>
+<p>结果为：<br>class | name_age<br>:-|:-<br>1001 | zh:18;en:19<br>1002 | cs:18;jp:19</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySQL%E5%B0%86%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5%E8%BF%9B%E8%A1%8C%E5%90%88%E5%B9%B6/" data-id="ck4u1kn3a00095cmqh19kc02j" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/增删改查/MySql中重新设置AUTO_INCREMENT自增值方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySql%E4%B8%AD%E9%87%8D%E6%96%B0%E8%AE%BE%E7%BD%AEAUTO_INCREMENT%E8%87%AA%E5%A2%9E%E5%80%BC%E6%96%B9%E6%B3%95/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.405Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySql%E4%B8%AD%E9%87%8D%E6%96%B0%E8%AE%BE%E7%BD%AEAUTO_INCREMENT%E8%87%AA%E5%A2%9E%E5%80%BC%E6%96%B9%E6%B3%95/">MySQL/增删改查/MySql中重新设置AUTO_INCREMENT自增值方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="重置自增-auto-increment"><a href="#重置自增-auto-increment" class="headerlink" title="重置自增 auto_increment"></a>重置自增 auto_increment</h1><h2 id="自增简述"><a href="#自增简述" class="headerlink" title="自增简述"></a>自增简述</h2><p>一般来说，自增值主要是数据表主键或者具有唯一性的字段，在MySQL中可通过数据列的AUTO_INCREMENT属性来自动生成。</p>
+<ul>
+<li><p>如果把一个NULL插入到一个AUTO_INCREMENT数据列里去，MySQL将自动生成下一个序列编号。编号从1开始，并1为基数递增。</p>
+</li>
+<li><p>把0插入AUTO_INCREMENT数据列的效果与插入NULL值一样。但不建议这样做，还是以插入NULL值为好。</p>
+</li>
+<li><p>当插入记录时，没有为AUTO_INCREMENT明确指定值，则等同插入NULL值。</p>
+</li>
+<li><p>当插入记录时，如果为AUTO_INCREMENT数据列明确指定了一个数值，则会出现两种情况，情况一，如果插入的值与已有的编号重复，则会出现出错信息，因为AUTO_INCREMENT数据列的值必须是唯一的；情况二，如果插入的值大于已编号的值，则会把该值插入到数据列中，并使在下一个编号将从这个新值开始递增。也就是说，可以跳过一些编号。</p>
+</li>
+<li><p>如果用UPDATE命令更新自增列，如果列值与已有的值重复，则会出错。如果大于已有值，则下一个编号从该值开始递增。</p>
+</li>
+</ul>
+<h2 id="重置自增"><a href="#重置自增" class="headerlink" title="重置自增"></a>重置自增</h2><ul>
+<li>目的：删除一行数据后，希望自增字段随着现有数据连续增长</li>
+</ul>
+<p>有两种方法可以做到这一点：</p>
+<h3 id="修改当前自增的id（说法有问题，也不知道怎么说比较合适）"><a href="#修改当前自增的id（说法有问题，也不知道怎么说比较合适）" class="headerlink" title="修改当前自增的id（说法有问题，也不知道怎么说比较合适）"></a>修改当前自增的id（说法有问题，也不知道怎么说比较合适）</h3><p><code>- alter table table_name auto_increment = 0</code>即下一行数据的自增字段从0开始自增,据说数据多的时候，效率很低下</p>
+<h3 id="重建"><a href="#重建" class="headerlink" title="重建"></a>重建</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">--- 删除原表数据,并重置自增列</span><br><span class="line">truncate table tablename  --truncate方式也可以重置自增字段</span><br><span class="line">--重置表的自增字段,保留数据</span><br><span class="line">DBCC CHECKIDENT (tablename,reseed,0)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>来自网友博客，不知是否好用</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySql%E4%B8%AD%E9%87%8D%E6%96%B0%E8%AE%BE%E7%BD%AEAUTO_INCREMENT%E8%87%AA%E5%A2%9E%E5%80%BC%E6%96%B9%E6%B3%95/" data-id="ck4u1kn3b000a5cmq0npsg2l9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/cmd/罗小黑库源码" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/cmd/%E7%BD%97%E5%B0%8F%E9%BB%91%E5%BA%93%E6%BA%90%E7%A0%81/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.402Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/cmd/%E7%BD%97%E5%B0%8F%E9%BB%91%E5%BA%93%E6%BA%90%E7%A0%81/">MySQL/cmd/罗小黑库源码</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">schema</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> luoxiaohei <span class="keyword">collate</span> utf8mb4_0900_ai_ci;</span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> ability</span><br><span class="line">(</span><br><span class="line">	<span class="keyword">id</span> <span class="built_in">int</span> auto_increment</span><br><span class="line">		primary <span class="keyword">key</span>,</span><br><span class="line">	<span class="keyword">name</span> <span class="built_in">char</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line">	note <span class="built_in">text</span> <span class="literal">null</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> racial</span><br><span class="line">(</span><br><span class="line">	<span class="keyword">id</span> <span class="built_in">int</span> auto_increment</span><br><span class="line">		primary <span class="keyword">key</span>,</span><br><span class="line">	<span class="keyword">name</span> <span class="built_in">char</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="literal">null</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> <span class="string">`character`</span></span><br><span class="line">(</span><br><span class="line">	<span class="keyword">id</span> <span class="built_in">int</span> auto_increment</span><br><span class="line">		primary <span class="keyword">key</span>,</span><br><span class="line">	<span class="keyword">name</span> <span class="built_in">char</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line">	racial <span class="built_in">int</span> <span class="literal">null</span>,</span><br><span class="line">	note <span class="built_in">text</span> <span class="literal">null</span>,</span><br><span class="line">	<span class="keyword">constraint</span> fk_racial</span><br><span class="line">		<span class="keyword">foreign</span> <span class="keyword">key</span> (racial) <span class="keyword">references</span> racial (<span class="keyword">id</span>)</span><br><span class="line">			<span class="keyword">on</span> <span class="keyword">update</span> <span class="keyword">cascade</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> <span class="string">`character-ability`</span></span><br><span class="line">(</span><br><span class="line">	character_id <span class="built_in">int</span> <span class="keyword">not</span> <span class="literal">null</span>,</span><br><span class="line">	ability_id <span class="built_in">int</span> <span class="literal">null</span>,</span><br><span class="line">	<span class="keyword">constraint</span> fk_ability</span><br><span class="line">		<span class="keyword">foreign</span> <span class="keyword">key</span> (ability_id) <span class="keyword">references</span> ability (<span class="keyword">id</span>)</span><br><span class="line">			<span class="keyword">on</span> <span class="keyword">update</span> <span class="keyword">cascade</span>,</span><br><span class="line">	<span class="keyword">constraint</span> fk_character</span><br><span class="line">		<span class="keyword">foreign</span> <span class="keyword">key</span> (character_id) <span class="keyword">references</span> <span class="string">`character`</span> (<span class="keyword">id</span>)</span><br><span class="line">			<span class="keyword">on</span> <span class="keyword">update</span> <span class="keyword">cascade</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/cmd/%E7%BD%97%E5%B0%8F%E9%BB%91%E5%BA%93%E6%BA%90%E7%A0%81/" data-id="ck4u1kn3800085cmqc2m86994" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/cmd/简单用户管理" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/cmd/%E7%AE%80%E5%8D%95%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.401Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/cmd/%E7%AE%80%E5%8D%95%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/">MySQL/cmd/简单用户管理</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h1><h2 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> <span class="string">'user_nmae'</span>@<span class="string">'localhost'</span><span class="comment">#(限制的主机地址)</span></span><br><span class="line"><span class="keyword">identified</span> <span class="keyword">with</span> mysql_native_password <span class="comment"># 身份验证的方式</span></span><br><span class="line"><span class="keyword">by</span><span class="string">'user_password'</span> <span class="comment">#用户密码</span></span><br><span class="line"><span class="keyword">with</span></span><br><span class="line">max_queries_per_hour</span><br><span class="line">max_updates_per_hour</span><br><span class="line">max_connections_per_hour</span><br><span class="line">max_user_connections</span><br></pre></td></tr></table></figure>
+
+<p><code>max_queries_per_hour</code><br>该参数设置一个用户在一小时内可以执行查询的次数（基本包含所有语句）</p>
+<p><code>max_updates_per_hour</code><br>该参数设置一个用户在一小时内可以执行修改的次数（仅包含修改数据库或表的语句）。</p>
+<p><code>max_connections_per_hour</code><br>该参数设置一个用户在一小时内可以连接MySQL的时间。</p>
+<p><code>max_user_connections</code><br>该参数作用是设置所有用户在同一时间连接MySQL实例的最大连接数限制。但这个参数无法对每个用户区别对待。</p>
+<h2 id="用户的权限授予与撤销"><a href="#用户的权限授予与撤销" class="headerlink" title="用户的权限授予与撤销"></a>用户的权限授予与撤销</h2><h3 id="权限的授予"><a href="#权限的授予" class="headerlink" title="权限的授予"></a>权限的授予</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grant privilege_name on database_name.Table_name </span><br><span class="line">to &#39;user_name&#39;@&#39;主机地址&#39;</span><br></pre></td></tr></table></figure>
+<p>将 table的privilege赋给user<br>如果需要添加授权，则再次运行这条语句即为添加而不是覆盖。</p>
+<ul>
+<li>可以通过授予权限的方式来创建用户<br>但是mySQL将在mySQL9时删除该功能（意思就是说不要用，要没了，可能有什么不太妙的地方）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grant privilege_name on database_name.Table_name </span><br><span class="line">to &#39;user_name&#39;@&#39;主机地址&#39;</span><br><span class="line">identified by &#39;password&#39;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="一个典型的创建用户与授权的例子"><a href="#一个典型的创建用户与授权的例子" class="headerlink" title="一个典型的创建用户与授权的例子"></a>一个典型的创建用户与授权的例子</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grant insert,select,update,delete on ownSQL.*</span><br><span class="line">to &#39;user1&#39;@&#39;localhost&#39; identified &#39;123456&#39;</span><br></pre></td></tr></table></figure>
+<p>或许这一种创建用户的方式用的比较多，因为把创建用户和权限授予写在了一起，清晰也很简洁。</p>
+<p>检查用户的权限<br><code>show grants &#39;user_name&#39;@&#39;主机限制&#39;</code><br>打印出该用户所拥有的各项权限。</p>
+<h3 id="权限的撤销"><a href="#权限的撤销" class="headerlink" title="权限的撤销"></a>权限的撤销</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">revoke</span> privilege_name <span class="keyword">on</span> database_name.table.name <span class="keyword">from</span></span><br><span class="line">user_name @ <span class="string">'主机地址'</span></span><br></pre></td></tr></table></figure>
+<p>撤销权限与创建权限的语法相同。向用户授予权限用<code>to</code>，从用户撤销权限用<code>from</code>。</p>
+<h3 id="直接修改mysql-user表"><a href="#直接修改mysql-user表" class="headerlink" title="直接修改mysql.user表"></a>直接修改mysql.user表</h3><p>这也是一种更改用户权限的一种方式，但是不会立即生效，需要手动重新载入改表才能生效。</p>
+<h3 id="设置用户密码有效期"><a href="#设置用户密码有效期" class="headerlink" title="设置用户密码有效期"></a>设置用户密码有效期</h3><p><code>password expire</code></p>
+<ul>
+<li>手动设置用户密码为过期状态<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &#39;user_name&#39;@&#39;主机地址&#39; password expire</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>-手动设置用户密码过期时间<br>要求用户90天更换一次密码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &#39;user_name&#39;@&#39;主机地址&#39; password expire interval 90 day</span><br></pre></td></tr></table></figure>
+
+<h3 id="锁定账户"><a href="#锁定账户" class="headerlink" title="锁定账户"></a>锁定账户</h3><p><code>create user</code>或者<code>alt user</code>都可以使用<code>account lock</code>来锁定账户，用<br><code>account unlock</code>来解锁账户</p>
+<h3 id="为用户创建角色"><a href="#为用户创建角色" class="headerlink" title="为用户创建角色"></a>为用户创建角色</h3><p>角色就是一系列权限的集合（<code>read_only</code>,<code>admin</code>…），可以为用户同时分配几个角色（即让一个用户同时担任多个角色）</p>
+<ul>
+<li><p>创建两个角色 <code>read_only</code>,<code>root</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create role &#39;read_only&#39;,&#39;root&#39;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>为这两个角色分配权限<br>给角色分配权和给用户直接分配权限是一样的 使用<code>grant</code>命令。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant select on &#96;database_name&#96;.&#96;table_name&#96; to read_only;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询用户所拥有的角色？<br>没发现这样的命令，都是直接对user表进行的查询。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/cmd/%E7%AE%80%E5%8D%95%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" data-id="ck4u1kn3800075cmqdz8udmzp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/cmd/MySQL关键字" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/cmd/MySQL%E5%85%B3%E9%94%AE%E5%AD%97/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.400Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/cmd/MySQL%E5%85%B3%E9%94%AE%E5%AD%97/">MySQL/cmd/MySQL关键字</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="啊哈"><a href="#啊哈" class="headerlink" title="啊哈/"></a>啊哈/</h1><p>MySQL 关键字一览：</p>
+<table>
+<thead>
+<tr>
+<th align="left">ADD</th>
+<th>ALL</th>
+<th>ALTER</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">ANALYZE</td>
+<td>AND</td>
+<td>AS</td>
+</tr>
+<tr>
+<td align="left">ASC</td>
+<td>ASENSITIVE</td>
+<td>BEFORE</td>
+</tr>
+<tr>
+<td align="left">BETWEEN</td>
+<td>BIGINT</td>
+<td>BINARY</td>
+</tr>
+<tr>
+<td align="left">BLOB</td>
+<td>BOTH</td>
+<td>BY</td>
+</tr>
+<tr>
+<td align="left">CALL</td>
+<td>CASCADE</td>
+<td>CASE</td>
+</tr>
+<tr>
+<td align="left">CHANGE</td>
+<td>CHAR</td>
+<td>CHARACTER</td>
+</tr>
+<tr>
+<td align="left">CHECK</td>
+<td>COLLATE</td>
+<td>COLUMN</td>
+</tr>
+<tr>
+<td align="left">CONDITION</td>
+<td>CONNECTION</td>
+<td>CONSTRAINT</td>
+</tr>
+<tr>
+<td align="left">CONTINUE</td>
+<td>CONVERT</td>
+<td>CREATE</td>
+</tr>
+<tr>
+<td align="left">CROSS</td>
+<td>CURRENT_DATE</td>
+<td>CURRENT_TIME</td>
+</tr>
+<tr>
+<td align="left">CURRENT_TIMESTAMP</td>
+<td>CURRENT_USER</td>
+<td>CURSOR</td>
+</tr>
+<tr>
+<td align="left">DATABASE</td>
+<td>DATABASES</td>
+<td>DAY_HOUR</td>
+</tr>
+<tr>
+<td align="left">DAY_MICROSECOND</td>
+<td>DAY_MINUTE</td>
+<td>DAY_SECOND</td>
+</tr>
+<tr>
+<td align="left">DEC</td>
+<td>DECIMAL</td>
+<td>DECLARE</td>
+</tr>
+<tr>
+<td align="left">DEFAULT</td>
+<td>DELAYED</td>
+<td>DELETE</td>
+</tr>
+<tr>
+<td align="left">DESC</td>
+<td>DESCRIBE</td>
+<td>DETERMINISTIC</td>
+</tr>
+<tr>
+<td align="left">DISTINCT</td>
+<td>DISTINCTROW</td>
+<td>DIV</td>
+</tr>
+<tr>
+<td align="left">DOUBLE</td>
+<td>DROP</td>
+<td>DUAL</td>
+</tr>
+<tr>
+<td align="left">EACH</td>
+<td>ELSE</td>
+<td>ELSEIF</td>
+</tr>
+<tr>
+<td align="left">ENCLOSED</td>
+<td>ESCAPED</td>
+<td>EXISTS</td>
+</tr>
+<tr>
+<td align="left">EXIT</td>
+<td>EXPLAIN</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td align="left">FETCH</td>
+<td>FLOAT</td>
+<td>FLOAT4</td>
+</tr>
+<tr>
+<td align="left">FLOAT8</td>
+<td>FOR</td>
+<td>FORCE</td>
+</tr>
+<tr>
+<td align="left">FOREIGN</td>
+<td>FROM</td>
+<td>FULLTEXT</td>
+</tr>
+<tr>
+<td align="left">GOTO</td>
+<td>GRANT</td>
+<td>GROUP</td>
+</tr>
+<tr>
+<td align="left">HAVING</td>
+<td>HIGH_PRIORITY</td>
+<td>HOUR_MICROSECOND</td>
+</tr>
+<tr>
+<td align="left">HOUR_MINUTE</td>
+<td>HOUR_SECOND</td>
+<td>IF</td>
+</tr>
+<tr>
+<td align="left">IGNORE</td>
+<td>IN</td>
+<td>INDEX</td>
+</tr>
+<tr>
+<td align="left">INFILE</td>
+<td>INNER</td>
+<td>INOUT</td>
+</tr>
+<tr>
+<td align="left">INSENSITIVE</td>
+<td>INSERT</td>
+<td>INT</td>
+</tr>
+<tr>
+<td align="left">INT1</td>
+<td>INT2</td>
+<td>INT3</td>
+</tr>
+<tr>
+<td align="left">INT4</td>
+<td>INT8</td>
+<td>INTEGER</td>
+</tr>
+<tr>
+<td align="left">INTERVAL</td>
+<td>INTO</td>
+<td>IS</td>
+</tr>
+<tr>
+<td align="left">ITERATE</td>
+<td>JOIN</td>
+<td>KEY</td>
+</tr>
+<tr>
+<td align="left">KEYS</td>
+<td>KILL</td>
+<td>LABEL</td>
+</tr>
+<tr>
+<td align="left">LEADING</td>
+<td>LEAVE</td>
+<td>LEFT</td>
+</tr>
+<tr>
+<td align="left">LIKE</td>
+<td>LIMIT</td>
+<td>LINEAR</td>
+</tr>
+<tr>
+<td align="left">LINES</td>
+<td>LOAD</td>
+<td>LOCALTIME</td>
+</tr>
+<tr>
+<td align="left">LOCALTIMESTAMP</td>
+<td>LOCK</td>
+<td>LONG</td>
+</tr>
+<tr>
+<td align="left">LONGBLOB</td>
+<td>LONGTEXT</td>
+<td>LOOP</td>
+</tr>
+<tr>
+<td align="left">LOW_PRIORITY</td>
+<td>MATCH</td>
+<td>MEDIUMBLOB</td>
+</tr>
+<tr>
+<td align="left">MEDIUMINT</td>
+<td>MEDIUMTEXT</td>
+<td>MIDDLEINT</td>
+</tr>
+<tr>
+<td align="left">MINUTE_MICROSECOND</td>
+<td>MINUTE_SECOND</td>
+<td>MOD</td>
+</tr>
+<tr>
+<td align="left">MODIFIES</td>
+<td>NATURAL</td>
+<td>NOT</td>
+</tr>
+<tr>
+<td align="left">NO_WRITE_TO_BINLOG</td>
+<td>NULL</td>
+<td>NUMERIC</td>
+</tr>
+<tr>
+<td align="left">ON</td>
+<td>OPTIMIZE</td>
+<td>OPTION</td>
+</tr>
+<tr>
+<td align="left">OPTIONALLY</td>
+<td>OR</td>
+<td>ORDER</td>
+</tr>
+<tr>
+<td align="left">OUT</td>
+<td>OUTER</td>
+<td>OUTFILE</td>
+</tr>
+<tr>
+<td align="left">PRECISION</td>
+<td>PRIMARY</td>
+<td>PROCEDURE</td>
+</tr>
+<tr>
+<td align="left">PURGE</td>
+<td>RAID0</td>
+<td>RANGE</td>
+</tr>
+<tr>
+<td align="left">READ</td>
+<td>READS</td>
+<td>REAL</td>
+</tr>
+<tr>
+<td align="left">REFERENCES</td>
+<td>REGEXP</td>
+<td>RELEASE</td>
+</tr>
+<tr>
+<td align="left">RENAME</td>
+<td>REPEAT</td>
+<td>REPLACE</td>
+</tr>
+<tr>
+<td align="left">REQUIRE</td>
+<td>RESTRICT</td>
+<td>RETURN</td>
+</tr>
+<tr>
+<td align="left">REVOKE</td>
+<td>RIGHT</td>
+<td>RLIKE</td>
+</tr>
+<tr>
+<td align="left">SCHEMA</td>
+<td>SCHEMAS</td>
+<td>SECOND_MICROSECOND</td>
+</tr>
+<tr>
+<td align="left">SELECT</td>
+<td>SENSITIVE</td>
+<td>SEPARATOR</td>
+</tr>
+<tr>
+<td align="left">SET</td>
+<td>SHOW</td>
+<td>SMALLINT</td>
+</tr>
+<tr>
+<td align="left">SPATIAL</td>
+<td>SPECIFIC</td>
+<td>SQL</td>
+</tr>
+<tr>
+<td align="left">SQLEXCEPTION</td>
+<td>SQLSTATE</td>
+<td>SQLWARNING</td>
+</tr>
+<tr>
+<td align="left">SQL_BIG_RESULT</td>
+<td>SQL_CALC_FOUND_ROWS</td>
+<td>SQL_SMALL_RESULT</td>
+</tr>
+<tr>
+<td align="left">SSL</td>
+<td>STARTING</td>
+<td>STRAIGHT_JOIN</td>
+</tr>
+<tr>
+<td align="left">TABLE</td>
+<td>TERMINATED</td>
+<td>THEN</td>
+</tr>
+<tr>
+<td align="left">TINYBLOB</td>
+<td>TINYINT</td>
+<td>TINYTEXT</td>
+</tr>
+<tr>
+<td align="left">TO</td>
+<td>TRAILING</td>
+<td>TRIGGER</td>
+</tr>
+<tr>
+<td align="left">TRUE</td>
+<td>UNDO</td>
+<td>UNION</td>
+</tr>
+<tr>
+<td align="left">UNIQUE</td>
+<td>UNLOCK</td>
+<td>UNSIGNED</td>
+</tr>
+<tr>
+<td align="left">UPDATE</td>
+<td>USAGE</td>
+<td>USE</td>
+</tr>
+<tr>
+<td align="left">USING</td>
+<td>UTC_DATE</td>
+<td>UTC_TIME</td>
+</tr>
+<tr>
+<td align="left">UTC_TIMESTAMP</td>
+<td>VALUES</td>
+<td>VARBINARY</td>
+</tr>
+<tr>
+<td align="left">VARCHAR</td>
+<td>VARCHARACTER</td>
+<td>VARYING</td>
+</tr>
+<tr>
+<td align="left">WHEN</td>
+<td>WHERE</td>
+<td>WHILE</td>
+</tr>
+<tr>
+<td align="left">WITH</td>
+<td>WRITE</td>
+<td>X509</td>
+</tr>
+<tr>
+<td align="left">XOR</td>
+<td>YEAR_MONTH</td>
+<td>ZEROFILL</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/cmd/MySQL%E5%85%B3%E9%94%AE%E5%AD%97/" data-id="ck4u1kn3600055cmqfvfohasg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/cmd/docker-compose 使用mySQL" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/cmd/docker-compose%20%E4%BD%BF%E7%94%A8mySQL/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.398Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/cmd/docker-compose%20%E4%BD%BF%E7%94%A8mySQL/">MySQL/cmd/docker-compose 使用mySQL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用-docker-compose-运行-MySQL"><a href="#使用-docker-compose-运行-MySQL" class="headerlink" title="使用 docker-compose 运行 MySQL"></a>使用 docker-compose 运行 MySQL</h1><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">│  .env</span><br><span class="line">│  docker-compose.yml</span><br><span class="line">│</span><br><span class="line">└─mysql</span><br><span class="line">    ├─config</span><br><span class="line">    │      my.cnf</span><br><span class="line">    │</span><br><span class="line">    └─data</span><br></pre></td></tr></table></figure>
+<p>mysql 目录下的 data 为数据目录，mysql 的数据表、二进制日志文件就在这里。.env 文件包含了一些变量，这些变量可以在 docker-compose.yml 文件中通过 ${variable_name} 来引用。</p>
+<ul>
+<li>当然也可以把 mysql 的目录放到其它地方，这里图个方便，直接放在 yml 文件同级目录了。</li>
+</ul>
+<h2 id="env-文件"><a href="#env-文件" class="headerlink" title=".env 文件"></a>.env 文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MYSQL_ROOT_PASSWORD&#x3D;root</span><br><span class="line">MYSQL_ROOT_HOST&#x3D;%</span><br><span class="line"></span><br><span class="line">MYSQL_DIR&#x3D;.&#x2F;mysql</span><br></pre></td></tr></table></figure>
+<h2 id="MySQL-配置文件-my-cnf"><a href="#MySQL-配置文件-my-cnf" class="headerlink" title="MySQL 配置文件 my.cnf"></a>MySQL 配置文件 my.cnf</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">character-set-server&#x3D;utf8mb4</span><br><span class="line">default-time-zone&#x3D;&#39;+8:00&#39;</span><br><span class="line">innodb_rollback_on_timeout&#x3D;&#39;ON&#39;</span><br><span class="line">max_connections&#x3D;500</span><br><span class="line">innodb_lock_wait_timeout&#x3D;500</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果使用默认配置，这个文件可以省略。</li>
+</ul>
+<h2 id="docker-compose-yml"><a href="#docker-compose-yml" class="headerlink" title="docker-compose.yml"></a>docker-compose.yml</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">version: &#39;3&#39;</span><br><span class="line"></span><br><span class="line">services:</span><br><span class="line"></span><br><span class="line">  mysql-db:</span><br><span class="line">    container_name: mysql-docker        # 指定容器的名称</span><br><span class="line">    image: mysql:8.0                   # 指定镜像和版本</span><br><span class="line">    ports:</span><br><span class="line">      - &quot;3306:3306&quot;</span><br><span class="line">    environment:</span><br><span class="line">      MYSQL_ROOT_PASSWORD: $&#123;MYSQL_ROOT_PASSWORD&#125;</span><br><span class="line">      MYSQL_ROOT_HOST: $&#123;MYSQL_ROOT_HOST&#125;</span><br><span class="line">    volumes:</span><br><span class="line">      - &quot;$&#123;MYSQL_DIR&#125;&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql&quot;           # 挂载数据目录</span><br><span class="line">      - &quot;$&#123;MYSQL_DIR&#125;&#x2F;config:&#x2F;etc&#x2F;mysql&#x2F;conf.d&quot;      # 挂载配置文件目录</span><br></pre></td></tr></table></figure>
+<h2 id="Environment-变量"><a href="#Environment-变量" class="headerlink" title="Environment 变量"></a>Environment 变量</h2><p><code>MYSQL_ROOT_PASSWORD</code> ：这个不用解释，root 用户的密码。<br><code>MYSQL_USER</code>，<code>MYSQL_PASSWORD</code> ：这两个变量为可选，创建一个新用户，这个用户在 <code>MYSQL_DATABASE</code> 变量指定的数据库上拥有超级用户权限。<br><code>MYSQL_DATABASE</code> ：指定一个数据库，在容器启动时创建。<br><code>MYSQL_ALLOW_EMPTY_PASSWORD</code> ：设置为 yes 允许 root 用户的密码为空。（不推荐）<br><code>MYSQL_RANDOM_ROOT_PASSWORD</code> ：设置为 yes 将在容器启动时为 root   用户生成一个随机的密码，密码会显示到标准输出流（GENERATED ROOT PASSWORD:……）。<br><code>MYSQL_ONETIME_PASSWORD</code> ：字面意思就是一次性密码，为 root   用户设置，第一次登录后必须修改密码（仅支持 5.6 以上的版本）。  </p>
+<h2 id="运行容器"><a href="#运行容器" class="headerlink" title="运行容器"></a>运行容器</h2><p>在 docker-compose.yml 目录下执行：</p>
+<blockquote>
+<p>docker-compose up</p>
+</blockquote>
+<p>如果要在后台运行，使用 <code>docker-compose up -d</code>。</p>
+<p>停止容器：</p>
+<blockquote>
+<p>docker-compose down  </p>
+</blockquote>
+<p>如果是前台运行的，使用：<code>Ctrl + C</code> 停止。这两种方式在停止后都会删除容器，下次启动必须使用 up 命令。</p>
+<p>停止但不删除容器：</p>
+<blockquote>
+<p>docker-compose stop  </p>
+</blockquote>
+<p>使用 <code>stop</code> 停止后，再次启动使用 <code>start</code> 命令即可。</p>
+<p><code>docker exec-it mysql-docker sh</code><br>通过命令行连接到 容器</p>
+<ul>
+<li><code>i</code> 保持容器打开</li>
+<li><code>t</code> 产生一个伪终端</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/cmd/docker-compose%20%E4%BD%BF%E7%94%A8mySQL/" data-id="ck4u1kn3700065cmq1py34g2z" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MySQL/触发器_MySQL" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/31/MySQL/%E8%A7%A6%E5%8F%91%E5%99%A8_MySQL/" class="article-date">
+  <time datetime="2019-12-31T15:43:47.396Z" itemprop="datePublished">2019-12-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/31/MySQL/%E8%A7%A6%E5%8F%91%E5%99%A8_MySQL/">MySQL/触发器_MySQL</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="触发器-MySQL"><a href="#触发器-MySQL" class="headerlink" title="触发器_MySQL"></a>触发器_MySQL</h1><p>MySQL包含对触发器的支持。触发器是一种与表操作有关的数据库对象，当触发器所在表上出现指定事件时，将调用该对象，即表的操作事件触发表上的触发器的执行。</p>
+<h2 id="创建触发器"><a href="#创建触发器" class="headerlink" title="创建触发器"></a>创建触发器</h2><p>在MySQL中，创建触发器语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CREATE TRIGGER trigger_name</span><br><span class="line">trigger_time</span><br><span class="line">trigger_event ON tbl_name</span><br><span class="line">FOR EACH ROW</span><br><span class="line">trigger_stmt</span><br></pre></td></tr></table></figure>
+
+<p>其中：</p>
+<ul>
+<li>trigger_name：标识触发器名称，用户自行指定；</li>
+<li>trigger_time：标识触发时机，取值为 BEFORE 或 AFTER；</li>
+<li>trigger_event：标识触发事件，取值为 INSERT、UPDATE 或 DELETE；</li>
+<li>tbl_name：标识建立触发器的表名，即在哪张表上建立触发器；</li>
+<li>trigger_stmt：触发器程序体，可以是一句SQL语句，或者用 BEGIN 和 END 包含的多条语句。</li>
+</ul>
+<p>由此可见，可以建立6种触发器，即：BEFORE INSERT、BEFORE UPDATE、BEFORE DELETE、AFTER INSERT、AFTER UPDATE、AFTER DELETE。</p>
+<p>另外有一个限制是不能同时在一个表上建立2个相同类型的触发器，因此在一个表上最多建立6个触发器。</p>
+<h2 id="trigger-event-详解"><a href="#trigger-event-详解" class="headerlink" title="trigger_event 详解"></a>trigger_event 详解</h2><ul>
+<li><p>MySQL 除了对 INSERT、UPDATE、DELETE 基本操作进行定义外，还定义了LOAD DATA 和 REPLACE 语句，这两种语句也能引起上述6中类型的触发器的触发。</p>
+</li>
+<li><p>LOAD DATA 语句用于将一个文件装入到一个数据表中，相当与一系列的 INSERT 操作。</p>
+</li>
+<li><p>REPLACE 语句一般来说和 INSERT 语句很像，只是在表中有 primary key 或 unique 索引时，如果插入的数据和原来 primary key 或 unique 索引一致时，会先删除原来的数据，然后增加一条新数据，也就是说，一条 REPLACE 语句有时候等价于一条。</p>
+</li>
+<li><p>INSERT 语句，有时候等价于一条 DELETE 语句加上一条 INSERT 语句。</p>
+</li>
+<li><p>INSERT 型触发器：插入某一行时激活触发器，可能通过 INSERT、LOAD DATA、REPLACE 语句触发；</p>
+</li>
+<li><p>UPDATE 型触发器：更改某一行时激活触发器，可能通过 UPDATE 语句触发；</p>
+</li>
+<li><p>DELETE 型触发器：删除某一行时激活触发器，可能通过 DELETE、REPLACE 语句触发。</p>
+</li>
+</ul>
+<h2 id="BEGIN-…-END-详解"><a href="#BEGIN-…-END-详解" class="headerlink" title="BEGIN … END 详解"></a>BEGIN … END 详解</h2><p>在MySQL中，BEGIN … END 语句的语法为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">BEGIN</span><br><span class="line">[statement_list]</span><br><span class="line">END</span><br></pre></td></tr></table></figure>
+
+<p>​        其中，statement_list 代表一个或多个语句的列表，列表内的每条语句都必须用分号（;）来结尾。<br>​        而在MySQL中，分号是语句结束的标识符，遇到分号表示该段语句已经结束，MySQL可以开始执行了。因此，解释器遇到statement_list 中的分号后就开始执行，然后会报出错误，因为没有找到和 BEGIN 匹配的 END。</p>
+<p>​        这时就会用到 DELIMITER 命令（DELIMITER 是定界符，分隔符的意思），它是一条命令，不需要语句结束标识，语法为：<br><code>DELIMITER new_delemiter</code><br><code>new_delemiter</code> 可以设为1个或多个长度的符号，默认的是分号（;），我们可以把它修改为其他符号，如$：<br><code>DELIMITER $</code><br>在这之后的语句，以分号结束，解释器不会有什么反应，只有遇到了$，才认为是语句结束。注意，使用完之后，我们还应该记得把它给修改回来。</p>
+<h2 id="一个完整的创建触发器示例"><a href="#一个完整的创建触发器示例" class="headerlink" title="一个完整的创建触发器示例"></a>一个完整的创建触发器示例</h2><p>假设系统中有两个表：<br>班级表 class(班级号 classID, 班内学生数 stuCount)<br>学生表 student(学号 stuID, 所属班级号 classID)<br>要创建触发器来使班级表中的班内学生数随着学生的添加自动更新，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">DELIMITER $</span><br><span class="line">create trigger tri_stuInsert after insert</span><br><span class="line">on student for each row</span><br><span class="line">begin</span><br><span class="line">declare c int;</span><br><span class="line">set c &#x3D; (select stuCount from class where classID&#x3D;new.classID);</span><br><span class="line">update class set stuCount &#x3D; c + 1 where classID &#x3D; new.classID;</span><br><span class="line">end$</span><br><span class="line">DELIMITER ;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="变量详解"><a href="#变量详解" class="headerlink" title="变量详解"></a>变量详解</h2><p>MySQL 中使用 DECLARE 来定义一局部变量，该变量只能在 BEGIN … END 复合语句中使用，并且应该定义在复合语句的开头，</p>
+<p>即其它语句之前，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DECLARE var_name[,...] type [DEFAULT value]</span><br></pre></td></tr></table></figure>
+
+<p>其中：<br><code>var_name</code> 为变量名称，同 SQL 语句一样，变量名不区分大小写；<code>type</code> 为 MySQL 支持的任何数据类型；可以同时定义多个同类型的变量，用逗号隔开；变量初始值为 NULL，如果需要，可以使用 <code>DEFAULT</code> 子句提供默认值，值可以被指定为一个表达式。</p>
+<p>对变量赋值采用 <code>SET</code> 语句，语法为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET var_name &#x3D; expr [,var_name &#x3D; expr] ...</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="NEW-与-OLD-详解"><a href="#NEW-与-OLD-详解" class="headerlink" title="NEW 与 OLD 详解"></a>NEW 与 OLD 详解</h2><p>上述示例中使用了NEW关键字，和 MS SQL Server 中的 INSERTED 和 DELETED 类似，MySQL 中定义了 NEW 和 OLD，用来表示</p>
+<p>触发器的所在表中，触发了触发器的那一行数据。<br>具体地：<br>在 INSERT 型触发器中，NEW 用来表示将要（BEFORE）或已经（AFTER）插入的新数据；<br>在 UPDATE 型触发器中，OLD 用来表示将要或已经被修改的原数据，NEW 用来表示将要或已经修改为的新数据；<br>在 DELETE 型触发器中，OLD 用来表示将要或已经被删除的原数据；<br>使用方法： NEW.columnName （columnName 为相应数据表某一列名）<br>另外，OLD 是只读的，而 NEW 则可以在触发器中使用 SET 赋值，这样不会再次触发触发器，造成循环调用（如每插入一个学生前，都在其学号前加“2013”）。</p>
+<h2 id="查看触发器"><a href="#查看触发器" class="headerlink" title="查看触发器"></a>查看触发器</h2><p>和查看数据库<code>show databases</code>查看表格<code>show tables</code>一样，查看触发器的语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW TRIGGERS [FROM schema_name];</span><br></pre></td></tr></table></figure>
+
+<p>其中，<code>schema_name</code> 即 Schema 的名称，在 MySQL 中 Schema 和 Database 是一样的，也就是说，可以指定数据库名，这样就</p>
+<p>不必先<code>USE database_name</code>了。</p>
+<h2 id="删除触发器"><a href="#删除触发器" class="headerlink" title="删除触发器"></a>删除触发器</h2><p>和删除数据库、删除表格一样，删除触发器的语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TRIGGER [IF EXISTS] [schema_name.]trigger_name</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="触发器的执行顺序"><a href="#触发器的执行顺序" class="headerlink" title="触发器的执行顺序"></a>触发器的执行顺序</h2><p>我们建立的数据库一般都是 InnoDB 数据库，其上建立的表是事务性表，也就是事务安全的。这时，若SQL语句或触发器执行失败，MySQL 会回滚事务，有：</p>
+<ul>
+<li>如果 BEFORE 触发器执行失败，SQL 无法正确执行。</li>
+<li>SQL 执行失败时，AFTER 型触发器不会触发。</li>
+<li>AFTER 类型的触发器执行失败，SQL 会回滚。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jumpywin.github.io/2019/12/31/MySQL/%E8%A7%A6%E5%8F%91%E5%99%A8_MySQL/" data-id="ck4u1kn3300035cmq91aa8n21" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E8%A1%A8%E5%85%B3%E8%81%94/">MySQL/增删改查/表关联</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E5%88%9B%E5%BB%BA%E8%A1%A8%E4%B8%8E%E8%A1%A8%E5%86%85%E5%A2%9E%E5%88%A0%E6%94%B9/">MySQL/增删改查/创建表与表内增删改</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/">MySQL/增删改查/SQL查询语句</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySQL%E5%B0%86%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5%E8%BF%9B%E8%A1%8C%E5%90%88%E5%B9%B6/">MySQL/增删改查/MySQL将记录中的某个字段进行合并</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySql%E4%B8%AD%E9%87%8D%E6%96%B0%E8%AE%BE%E7%BD%AEAUTO_INCREMENT%E8%87%AA%E5%A2%9E%E5%80%BC%E6%96%B9%E6%B3%95/">MySQL/增删改查/MySql中重新设置AUTO_INCREMENT自增值方法</a>
+          </li>
         
       </ul>
     </div>
   </div>
+
+  
 </aside>
-
-    <main id="main">
-        <header class="top-header" id="header">
-    <div class="flex-row">
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
-          <i class="icon icon-lg icon-navicon"></i>
-        </a>
-        <div class="flex-col header-title ellipsis">jumpywin_blog</div>
         
-        
-    </div>
-</header>
-<header class="content-header index-header">
-
-    <div class="container fade-scale">
-        <h1 class="title">jumpywin_blog</h1>
-        <h5 class="subtitle">
-            
-                
-            
-        </h5>
-    </div>
-
-    
-
-
-</header>
-
-<div class="container body-wrap">
-
-    <ul class="post-list">
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/增删改查/表关联"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.410Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
+      </div>
+      <footer id="footer">
   
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E8%A1%A8%E5%85%B3%E8%81%94/">MySQL/增删改查/表关联</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这是一个空的MarkDown123select c2....
-    
-
-        <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E8%A1%A8%E5%85%B3%E8%81%94/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 jumpywin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/增删改查/创建表与表内增删改"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.409Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E5%88%9B%E5%BB%BA%E8%A1%A8%E4%B8%8E%E8%A1%A8%E5%86%85%E5%A2%9E%E5%88%A0%E6%94%B9/">MySQL/增删改查/创建表与表内增删改</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        创建表12345create table if not...
-    
-
-        <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/%E5%88%9B%E5%BB%BA%E8%A1%A8%E4%B8%8E%E8%A1%A8%E5%86%85%E5%A2%9E%E5%88%A0%E6%94%B9/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/增删改查/SQL查询语句"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.408Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/">MySQL/增删改查/SQL查询语句</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        SQL 查询相关基本语句1234567891011se...
-    
-
-        <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/SQL%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/增删改查/MySQL将记录中的某个字段进行合并"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.406Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySQL%E5%B0%86%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5%E8%BF%9B%E8%A1%8C%E5%90%88%E5%B9%B6/">MySQL/增删改查/MySQL将记录中的某个字段进行合并</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        将元组中的某两个元素进行合并： concat()假如对...
-    
-
-        <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySQL%E5%B0%86%E8%AE%B0%E5%BD%95%E4%B8%AD%E7%9A%84%E6%9F%90%E4%B8%AA%E5%AD%97%E6%AE%B5%E8%BF%9B%E8%A1%8C%E5%90%88%E5%B9%B6/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/增删改查/MySql中重新设置AUTO_INCREMENT自增值方法"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.405Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySql%E4%B8%AD%E9%87%8D%E6%96%B0%E8%AE%BE%E7%BD%AEAUTO_INCREMENT%E8%87%AA%E5%A2%9E%E5%80%BC%E6%96%B9%E6%B3%95/">MySQL/增删改查/MySql中重新设置AUTO_INCREMENT自增值方法</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        重置自增 auto_increment自增简述一般来说...
-    
-
-        <a href="/2019/12/31/MySQL/%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/MySql%E4%B8%AD%E9%87%8D%E6%96%B0%E8%AE%BE%E7%BD%AEAUTO_INCREMENT%E8%87%AA%E5%A2%9E%E5%80%BC%E6%96%B9%E6%B3%95/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/cmd/罗小黑库源码"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.402Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/cmd/%E7%BD%97%E5%B0%8F%E9%BB%91%E5%BA%93%E6%BA%90%E7%A0%81/">MySQL/cmd/罗小黑库源码</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        123456789101112131415161718...
-    
-
-        <a href="/2019/12/31/MySQL/cmd/%E7%BD%97%E5%B0%8F%E9%BB%91%E5%BA%93%E6%BA%90%E7%A0%81/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/cmd/简单用户管理"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.401Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/cmd/%E7%AE%80%E5%8D%95%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/">MySQL/cmd/简单用户管理</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        用户管理创建用户12345678create user...
-    
-
-        <a href="/2019/12/31/MySQL/cmd/%E7%AE%80%E5%8D%95%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/cmd/MySQL关键字"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.400Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/cmd/MySQL%E5%85%B3%E9%94%AE%E5%AD%97/">MySQL/cmd/MySQL关键字</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        啊哈/MySQL 关键字一览：
-
-
-
-ADD
-ALL
-...
-    
-
-        <a href="/2019/12/31/MySQL/cmd/MySQL%E5%85%B3%E9%94%AE%E5%AD%97/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/cmd/docker-compose 使用mySQL"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.398Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/cmd/docker-compose%20%E4%BD%BF%E7%94%A8mySQL/">MySQL/cmd/docker-compose 使用mySQL</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        使用 docker-compose 运行 MySQL目...
-    
-
-        <a href="/2019/12/31/MySQL/cmd/docker-compose%20%E4%BD%BF%E7%94%A8mySQL/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-MySQL/触发器_MySQL"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-12-31 23:43:47" datetime="2019-12-31T15:43:47.396Z"  itemprop="datePublished">2019-12-31</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/12/31/MySQL/%E8%A7%A6%E5%8F%91%E5%99%A8_MySQL/">MySQL/触发器_MySQL</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        触发器_MySQLMySQL包含对触发器的支持。触发器...
-    
-
-        <a href="/2019/12/31/MySQL/%E8%A7%A6%E5%8F%91%E5%99%A8_MySQL/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
-    
-<nav id="page-nav">
-    <div class="inner">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
-    </div>
-</nav>
-
-
-</div>
-
-        <footer class="footer">
-    <div class="top">
-        
-
-        <p>
-            
-            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
-        </p>
-    </div>
-    <div class="bottom">
-        <p><span>jumpywin &copy; 2019</span>
-            <span>
-                
-                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
-            </span>
-        </p>
-    </div>
+  </div>
 </footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
 
-    </main>
-    <div class="mask" id="mask"></div>
-<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
-
-
-    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
-<script>
-var BLOG = { ROOT: '/', SHARE: , REWARD: false };
-
-
-</script>
-
-<script src="/js/main.min.js?v=1.7.2"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
-
-
-
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
 
 
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
 </body>
 </html>
