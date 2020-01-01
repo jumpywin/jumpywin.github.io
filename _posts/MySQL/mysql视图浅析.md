@@ -1,3 +1,9 @@
+---
+title: MySQL视图浅析
+categories: [MySQL,]
+tags: [MySQL]
+---
+
 # MySQL 视图浅析
 
 
