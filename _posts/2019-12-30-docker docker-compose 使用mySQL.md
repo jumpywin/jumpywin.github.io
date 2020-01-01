@@ -1,7 +1,7 @@
 ---
 title: Docker-compose 运行MySQL
 date: 2019-12-30 11:50 +0800
-categories: [Docker, MySQL]
+categories: [Docker]
 tags: [Docker, MySQL]
 ---
 
