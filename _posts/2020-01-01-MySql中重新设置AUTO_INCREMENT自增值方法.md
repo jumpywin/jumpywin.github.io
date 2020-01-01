@@ -1,3 +1,10 @@
+---
+title: 重置自增 auto_increment
+date: 2019-09-16 11:50 +0800
+categories: [MySQL]
+tags: [MySQL]
+---
+
 # 重置自增 auto_increment
 
 ## 自增简述
