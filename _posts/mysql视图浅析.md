@@ -1,6 +1,7 @@
 ---
-title: MySQL视图浅析
-categories: [MySQL,]
+title: MySQL_视图浅析
+date: 2019-09-04 20:25:00 +0800
+categories: [MySQL,视图]
 tags: [MySQL]
 ---
 
