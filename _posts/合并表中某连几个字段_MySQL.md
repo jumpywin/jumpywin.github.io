@@ -1,5 +1,11 @@
-# 将元组中的某两个元素进行合并： concat()
+---
+title: 合并表中某连几个字段_MySQL
+date: 2019-09-16 11:50 +0800
+categories: [MySQL]
+tags: [MySQL]
+---
 
+## 将元组中的某两个元素进行合并： concat()
 假如对于user表，如下：  
 
 id|class|name|age
@@ -23,7 +29,7 @@ i|class|name_age
 4 | 1002 | jp: 19
 
 
-# 将多个元组中的某些某些元素合并：group_coacat()
+## 将多个元组中的某些某些元素合并：group_coacat()
 
 依然对上面user表， 若根据年级分组， 并将name和age全部合并在一列中显示， 有：
 class | name_age
