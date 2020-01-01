@@ -10,13 +10,14 @@ layout: compress
 
   {% include head.html %}
 
-  <body data-spy="scroll" data-target="#toc">
+  <body>
     <div id="sidebar" class="d-flex flex-column">
       {% include sidebar.html %}
     </div>
-    <div id="main-wrapper" class="bg-white">
+    <div id="main-wrap">
       {% include topbar.html %}
       <div id="main">
+        <div class="row justify-content-center bg-white">
 
         {% capture _content %}
           {{ content }}
@@ -25,6 +26,7 @@ layout: compress
         {% include fixlinenos.html %}
         {{ _content }}
 
+        </div>
         {% include footer.html %}
       </div>
       {% include search-results.html %}
@@ -32,16 +34,11 @@ layout: compress
 
     <div id="mask"></div>
 
+    {% include search.html %}
+
     <a id="back-to-top" href="#" class="btn btn-lg btn-box-shadow" role="button">
       <i class="fas fa-angle-up"></i>
     </a>
-
-    {% if jekyll.environment == 'production' %}
-      {% include google-analytics.html %}
-    {% endif %}
-
-    {% include search-loader.html %}
-
   </body>
 
 </html>

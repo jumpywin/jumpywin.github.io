@@ -1,4 +1,1 @@
----
----
-
-{"proxyUrl":"{{ site.google_analytics.proxy_url }}"}
+{"proxyUrl":"https://your-gae.appspot.com/query?id=the_secrt_id"}

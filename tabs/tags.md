@@ -1,16 +1,16 @@
 ---
-title: Tags
+title: 标签
 
 # All the Tags of posts.
 # © 2017-2019 Cotes Chung
 # MIT License
 ---
 
-{% comment %}
+{%comment%}
   'site.tags' looks like a Map, e.g. site.tags.MyTag.[ Post0, Post1, ... ]
   Print the {{ site.tags }} will help you to understand it.
-{% endcomment %}
-<div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
+{%endcomment%}
+<div id="tags" class="d-flex flex-wrap">
 {% assign tags = "" | split: "" %}
 {% for t in site.tags %}
   {% assign tags = tags | push: t[0] %}
@@ -20,7 +20,7 @@ title: Tags
 
 {% for t in sorted_tags %}
   <div>
-    <a class="tag" href="{{ site.baseurl }}/tags/{{ t | replace: ' ', '-' | downcase | url_encode }}/">{{ t }}<span class="text-muted">{{ site.tags[t].size }}</span></a>
+    <a class="tag" href="{{ site.baseurl }}/tags/{{ t | downcase | replace: ' ', '-' }}/">{{ t }}<span class="text-muted">{{ site.tags[t].size }}</span></a>
   </div>
 {% endfor %}
 

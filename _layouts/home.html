@@ -15,7 +15,7 @@ layout: page
     </h1>
     <div class="post-content">
       <p>
-      {{ post.content | strip_html | truncate: 200 | replace: '&', '&amp;' }}
+      {{ post.content | strip_html | truncate: 200 }}
       </p>
     </div>
 
@@ -24,13 +24,13 @@ layout: page
       <i class="far fa-clock fa-fw"></i>
       <span class="timeago" data-toggle="tooltip" title="{{ post.date | date: TOOLTIP_DATE }}">
       {{ post.date | date: POST_DATE }}
-      <i class="unloaded">{{ post.date | date_to_xmlschema }}</i>
+      <i class="hidden">{{ post.date | date_to_xmlschema }}</i>
       </span>
       <!-- page views -->
       {% if site.google_analytics.pv %}
       <i class="far fa-eye fa-fw"></i>
       <span id="pv_{{-post.title-}}" class="pageviews">
-        <i class="fas fa-spinner fa-spin fa-fw"></i>
+        <i class="fas fa-spinner fa-spin"></i>
       </span>
       {% endif %}
     </div>
@@ -118,4 +118,11 @@ layout: page
   {% endif %}
 
 </ul> <!-- .pagination -->
+{% endif %}
+
+<script src="{{ site.baseurl }}/assets/js/dist/timeago.min.js"></script>
+
+{% if site.google_analytics.pv %}
+<script src="{{ site.baseurl }}/assets/js/dist/countUp.min.js" async></script>
+<script src="{{ site.baseurl }}/assets/js/dist/pageviews.min.js" async></script>
 {% endif %}

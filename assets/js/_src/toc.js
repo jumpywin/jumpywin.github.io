@@ -1,13 +1,23 @@
 /*
- * Hide the empty ToC in posts.
+ * Initial the bootstrap-toc in posts.
  *
  * © 2019 Cotes Chung
  * MIT Licensed
  */
 
 $(function() {
-  if ($("#post-wrapper .post-content h1").length == 0
-      && $("#post-wrapper .post-content h2").length == 0) {
-    $("#toc-wrapper").addClass("unloaded");
+  var navSelector = "#toc"
+  Toc.init({
+    $nav: $(navSelector),
+    $scope: $("h2,h3")
+  });
+  $("body").scrollspy({
+    target: navSelector
+  });
+
+  // Hide ToC title if there is no head
+  if ($("#toc-wrap>nav#toc>ul>li").length == 0) {
+    $("#toc-wrap>h3").addClass("hidden");
   }
+
 });
