@@ -6,29 +6,29 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Cloud Li
+title: jumpy win
 
-description: '一条咸鱼'
+description: 'jumpy的杂货间'
 
 # Replace with your domain, e.g. "https://username.github.io"
-url: 'https://blog.cloudli.top'
+url: 'https://jumpywin.github.io'
 
-author: Cloud Li                          # change to your full name
+author: jumpywin                         # change to your full name
 
-logo: https://blog.cloudli.top/avatar.jpg    # Support network resources.
+logo: https://jumpywin.github.io/avatar.jpg    # Support network resources.
 
 github:
-  username: imcloudfloating             # change to your github username
+  username: jumpywin            # change to your github username
 
 twitter:
   username:             # change to your twitter username
 
 social:
-  name: Cloud Li                                # change to your full name
-  email: wfloatingcloud@outlook.com             # change to your email address
+  name: jumpywin                                # change to your full name
+  email: jumpywin@outlook.com             # change to your email address
   links:
     # - https://twitter.com/username           # change to your twitter homepage
-    - https://github.com/imcloudfloating       # change to your github homepage
+    - https://github.com/jumpywin      # change to your github homepage
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
