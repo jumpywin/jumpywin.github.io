@@ -34,7 +34,7 @@ MYSQL_DIR=./mysql
 
 ## MySQL 配置文件 my.cnf
 
-```[mysqld]
+```
 [mysqld]
 character-set-server=utf8mb4
 default-time-zone='+8:00'
@@ -94,7 +94,7 @@ services:
 
 使用 `stop` 停止后，再次启动使用 `start` 命令即可。
 
-`docker exec-it mysql-docker sh`  
+`docker exec -it mysql-docker sh`  
 通过命令行连接到 容器
 
 - `i` 保持容器打开
